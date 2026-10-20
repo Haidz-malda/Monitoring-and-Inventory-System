@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+/* Main Container */
+
+.form-container {
+    background: #ffffff;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+/* Page Title */
+
+.form-container h2 {
+    color: #17324d;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Form Group */
+
+.adding-inventory {
+    margin-bottom: 20px;
+}
+
+.adding-inventory label {
+    display: block;
+    margin-bottom: 8px;
+    color: #17324d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Inputs */
+
+.adding-inventory input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d5d9de;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #333;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Readonly Inputs */
+
+.adding-inventory input[readonly] {
+    background: #f4f6f9;
+    color: #555;
+    cursor: not-allowed;
+}
+
+/* Quantity Sold Input */
+
+.adding-inventory input[name="sold"] {
+    background: #ffffff;
+    cursor: text;
+}
+
+/* Focus */
+
+.adding-inventory input:focus {
+    border-color: #5563c1;
+    box-shadow: 0 0 0 3px rgba(85, 99, 193, 0.12);
+}
+
+/* Placeholder */
+
+.adding-inventory input::placeholder {
+    color: #999;
+}
+
+/* Button Container */
+
+.button {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Sell Button */
+
+.save-btn {
+    background: #17324d;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-btn:hover {
+    background: #5563c1;
+    transform: translateY(-2px);
+}
+
+/* Cancel Button */
+
+.cancel-btn {
+    background: #e9ecef;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover {
+    background: #d6d9dc;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .form-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .button {
+        flex-direction: column;
+    }
+
+    .save-btn,
+    .cancel-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

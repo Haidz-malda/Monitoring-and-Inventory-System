@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+/* Page Title */
+
+.page-title {
+    max-width: 900px;
+    margin: 30px auto 25px;
+}
+
+.page-title h2 {
+    color: #17324d;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Form Container */
+
+.form-container {
+    background: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+/* Form Group */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #17324d;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Input and Select */
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d5d9de;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333;
+    background: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #5563c1;
+    box-shadow: 0 0 0 3px rgba(85, 99, 193, 0.12);
+}
+
+/* Placeholder */
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+/* Button Group */
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Update Button */
+
+.update-btn {
+    background: #17324d;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.update-btn:hover {
+    background: #5563c1;
+    transform: translateY(-2px);
+}
+
+/* Cancel Button */
+
+.cancel-btn {
+    background: #e9ecef;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover {
+    background: #d6d9dc;
+    transform: translateY(-2px);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .page-title {
+        margin: 20px;
+    }
+
+    .form-container {
+        margin: 0 20px;
+        padding: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .update-btn,
+    .cancel-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

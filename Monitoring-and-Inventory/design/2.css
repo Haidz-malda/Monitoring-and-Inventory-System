@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+/* Main Content */
+
+.content {
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Page Title */
+
+.page-title {
+    margin-bottom: 25px;
+}
+
+.page-title h2 {
+    color: #17324d;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Form Container */
+
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+/* Form Group */
+
+.adding-product {
+    margin-bottom: 20px;
+}
+
+.adding-product label {
+    display: block;
+    margin-bottom: 8px;
+    color: #17324d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Input */
+
+.adding-product input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d5d9de;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #333;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Placeholder */
+
+.adding-product input::placeholder {
+    color: #999;
+}
+
+/* Input Focus */
+
+.adding-product input:focus {
+    border-color: #5563c1;
+    box-shadow: 0 0 0 3px rgba(85, 99, 193, 0.12);
+}
+
+/* Button Container */
+
+.button {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Save Button */
+
+.save-btn {
+    background: #17324d;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.save-btn:hover {
+    background: #5563c1;
+    transform: translateY(-2px);
+}
+
+/* Cancel Button */
+
+.cancel-btn {
+    background: #e9ecef;
+    color: #333;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover {
+    background: #d6d9dc;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .content {
+        padding: 20px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .button {
+        flex-direction: column;
+    }
+
+    .save-btn,
+    .cancel-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

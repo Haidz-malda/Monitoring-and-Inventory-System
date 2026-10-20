@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+/* Main Container */
+
+.history-container {
+    background: #ffffff;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+}
+
+/* Page Title */
+
+.history-container h2 {
+    color: #17324d;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Product Information */
+
+.history-container h3 {
+    color: #17324d;
+    font-size: 15px;
+    font-weight: 600;
+    background: #f4f6f9;
+    border: 1px solid #d5d9de;
+    padding: 13px 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Table Container */
+
+.history-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+/* Table Header */
+
+.history-container table th {
+    background: #17324d;
+    color: white;
+    padding: 13px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Table Data */
+
+.history-container table td {
+    padding: 13px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Table Row Hover */
+
+.history-container table tbody tr:hover {
+    background: #f4f6f9;
+}
+
+/* Current Stock */
+
+.history-container table td strong {
+    color: #17324d;
+    font-size: 15px;
+}
+
+/* Back Button */
+
+.history-container > a {
+    display: inline-block;
+    margin-top: 20px;
+    background: #17324d;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.history-container > a:hover {
+    background: #5563c1;
+    transform: translateY(-2px);
+}
+
+/* Responsive Table */
+
+@media (max-width: 800px) {
+
+    .history-container {
+        margin: 20px;
+        padding: 20px;
+        overflow-x: auto;
+    }
+
+    .history-container table {
+        min-width: 750px;
+    }
+}
